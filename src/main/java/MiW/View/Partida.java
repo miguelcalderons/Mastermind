@@ -11,13 +11,12 @@ public class Partida extends Main {
 
     private static BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
     private static MMController mm = new MMController();
-    private static int intentos = 10;
 
     public static void juego(String gameType)  throws IOException {
-
+        int intentos = 10;
         while (mm.guesses < intentos) {
-            System.out.println("Respuesta: " + mm.answer);
-            System.out.println(" Ingresa los colores: [cuatro letras de entre A-amarillo, R-rojo, V-verde, Z-azul,B-blanco, N-negro]");
+            writeln("Respuesta: " + mm.answer);
+            writeln(" Ingresa los colores: [cuatro letras de entre A-amarillo, R-rojo, V-verde, Z-azul,B-blanco, N-negro]");
             String guess;
             if(gameType.equals("1")) {
                 guess = input.readLine();
@@ -26,13 +25,13 @@ public class Partida extends Main {
             }
             if (guess.length() == 4) {
                 if (mm.validate(guess)) {
-                    System.out.println("Ganaste en " + mm.guesses + " intentos\n");
+                    writeln("Ganaste en " + mm.guesses + " intentos\n");
                     break;
                 } else {
-                    System.out.println("Muertos " + mm.muerto + " Heridos " + mm.herido + "\n");
+                    writeln("Muertos " + mm.muerto + " Heridos " + mm.herido + "\n");
                 }
             } else {
-                System.out.println("#### number format!");
+                writeln("#### number format!");
             }
         }
         mm.guesses = 0;
