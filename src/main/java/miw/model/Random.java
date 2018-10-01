@@ -1,4 +1,4 @@
-package MiW.Model;
+package miw.model;
 
 import java.util.ArrayList;
 import java.util.List;

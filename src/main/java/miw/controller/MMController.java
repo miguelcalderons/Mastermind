@@ -1,6 +1,6 @@
-package MiW.Controller;
+package miw.controller;
 
-import MiW.Model.Random;
+import miw.model.Random;
 
 public class MMController {
 

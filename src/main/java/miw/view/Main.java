@@ -1,4 +1,4 @@
-package MiW.View;
+package miw.view;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         while (true) {
             writeln("Bienvenido a MasterMind");
-            writeln("1. Partida\n 2. Demo\n");
+            writeln("1. Partida\n2. Demo\n");
             String gameType = input.readLine();
             Partida.juego(gameType);
             writeln("Se acabaron los intentos");

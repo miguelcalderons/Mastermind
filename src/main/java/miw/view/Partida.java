@@ -1,7 +1,7 @@
-package MiW.View;
+package miw.view;
 
-import MiW.Controller.MMController;
-import MiW.Model.Random;
+import miw.controller.MMController;
+import miw.model.Random;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,8 +14,8 @@ public class Partida extends Main {
 
     public static void juego(String gameType)  throws IOException {
         int intentos = 10;
+        writeln("Respuesta: ****");
         while (mm.guesses < intentos) {
-            writeln("Respuesta: " + mm.answer);
             writeln(" Ingresa los colores: [cuatro letras de entre A-amarillo, R-rojo, V-verde, Z-azul,B-blanco, N-negro]");
             String guess;
             if(gameType.equals("1")) {

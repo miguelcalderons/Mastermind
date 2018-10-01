@@ -1,5 +1,5 @@
 
-import MiW.Controller.MMController;
+import miw.controller.MMController;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
