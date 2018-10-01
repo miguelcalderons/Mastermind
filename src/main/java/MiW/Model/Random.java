@@ -1,9 +1,13 @@
-package Model;
+package MiW.Model;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Random {
+
+    private Random() {
+        throw new IllegalStateException("Utility class");
+    }
 
     public static String generate(){
         String sh = shuffle("ARVZBN");
@@ -16,7 +20,7 @@ public class Random {
             characters.add(c);
         }
         StringBuilder output = new StringBuilder(input.length());
-        while(characters.size()!=0){
+        while(!characters.isEmpty()){
             int randPicker = (int)(Math.random()*characters.size());
             output.append(characters.remove(randPicker));
         }

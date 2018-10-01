@@ -1,7 +1,7 @@
-package View;
+package MiW.View;
 
-import Controller.MMController;
-import Model.Random;
+import MiW.Controller.MMController;
+import MiW.Model.Random;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,7 +13,7 @@ public class Partida extends Main {
     private static MMController mm = new MMController();
     private static int intentos = 10;
 
-    public void juego (String gameType)  throws IOException {
+    public static void juego(String gameType)  throws IOException {
 
         while (mm.guesses < intentos) {
             System.out.println("Respuesta: " + mm.answer);

@@ -1,12 +1,12 @@
-package Controller;
+package MiW.Controller;
 
-import Model.Random;
-
-import java.lang.*;
+import MiW.Model.Random;
 
 public class MMController {
 
-    public int muerto, herido, guesses;
+    public int guesses;
+    public int muerto;
+    public int herido;
     public String answer;
 
 
