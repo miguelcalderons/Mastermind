@@ -6,8 +6,8 @@ import java.lang.*;
 
 public class MMController {
 
-    public int muerto, herido, guesses, intentos = 10;
-    public String answer, guess;
+    public int muerto, herido, guesses;
+    public String answer;
 
 
     public MMController(){
